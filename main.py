@@ -8,8 +8,7 @@ from sqlalchemy import text
 app = Flask(__name__)
 
 # Criação da conexão
-#engine = create_engine('postgresql://postgres:jplavorr1103@localhost:5432/postgres')
-engine = create_engine('postgresql://postgres:jpseedz123@104.154.44.235:5432/weather')
+
 
 
 
