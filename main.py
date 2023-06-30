@@ -4,13 +4,19 @@ import pandas as pd
 import json
 import psycopg2
 from sqlalchemy import text
-
+import os
 app = Flask(__name__)
 
 # Criação da conexão
 
 
+user = os.getenv('POSTGRES_USER')
+password = os.getenv('POSTGRES_PW')
+url = os.getenv('POSTGRES_URL')
+port = os.getenv('POSTGRES_PORT')
+db = os.getenv('POSTGRES_DB')
 
+engine = create_engine(f'postgresql://{user}:{password}@{url}:{port}/{db}')
 
 @app.route('/')
 def home():
