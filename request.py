@@ -7,7 +7,6 @@ data_to_post = {
     "hour": 12,
     "precipitation": 1.0,
     "dry_bulb_temperature": 25.0,
-    # adicione o restante dos campos aqui
 }
 
 data_to_put = {
@@ -16,7 +15,6 @@ data_to_put = {
     "hour": 13,
     "precipitation": 2.0,
     "dry_bulb_temperature": 26.0,
-    # adicione o restante dos campos aqui
 }
 
 cod_city_to_delete = 123456
