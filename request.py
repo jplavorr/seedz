@@ -39,9 +39,9 @@ def delete_weather_data(url):
 # Crie um executor de thread pool
 with concurrent.futures.ThreadPoolExecutor() as executor:
     # Inicie várias threads que irão executar as operações CRUD
-    executor.submit(create_weather_data, 'http://34.31.67.203:5000/api/create_weather', data_to_post)
-    executor.submit(get_weather_data, 'http://34.31.67.203:5000/api/weather')
-    executor.submit(update_weather_data, f'http://34.31.67.203:5000/api/update_weather/{data_to_put["cod_city"]}', data_to_put)
-    executor.submit(delete_weather_data, f'http://34.31.67.203:5000/api/delete_weather/{cod_city_to_delete}')
+    executor.submit(create_weather_data, 'http://35.194.27.80:5000/api/create_weather', data_to_post)
+    executor.submit(get_weather_data, 'http://35.194.27.80:5000/api/weather')
+    executor.submit(update_weather_data, f'http://35.194.27.80:5000/api/update_weather/{data_to_put["cod_city"]}', data_to_put)
+    executor.submit(delete_weather_data, f'http://35.194.27.80:5000/api/delete_weather/{cod_city_to_delete}')
 
 
